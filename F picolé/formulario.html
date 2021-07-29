@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+
+<head>
+    <!-- Metadados -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="formulario.css" media="screen">
+
+    <!-- Título da página (aparece na aba) -->
+    <title>Picolés</title>
+</head>
+
+<body>
+
+    <!-- Cabeçalho com título e subtítulo (ambos com css de id "titulo") -->
+    <div>
+        <h1 id="titulo">Picolés</h1>
+        <p id="subtitulo">Venda de picoles</p>
+        <br>
+    </div>
+
+    <!-- Início do formulário -->
+    <form>
+
+        <fieldset class="grupo">
+            <!-- Campo do nome com legenda "nome" e css de classe "campo" -->
+            <div class="campo">
+                <label for="nome"><strong>Nome</strong></label>
+                <input type="text" name="nome" id="nome" required>
+            </div>
+
+            <!-- Campo do sobrenome com legenda "sobrenome" e css de classe "campo" -->
+            <div class="campo">
+                <label for="sobrenome"><strong>Sobrenome</strong></label>
+                <input type="text" name="sobrenome" id="sobrenome" required>
+            </div>
+        </fieldset>
+
+        <!-- Campo de email com-->
+        <div class="campo">
+            <label for="email"><strong>Email</strong></label>
+            <input type="email" name="email" id="email" required>
+        </div>
+
+        <!-- Campo de desenvolvimento web com 3 opções de botões selecionáveis (radio button) e css de classe "campo" -->
+        <div class="campo">
+            <label><strong>Qual o sabor mais te agrada em um dia ensolarado?</strong></label>
+            <label>
+                <input type="radio" name="devweb" value="Manga" checked>Manga
+            </label>
+            <label>
+                <input type="radio" name="devweb" value="Marabaxi">Marabaxi
+            </label>
+            <label>
+                <input type="radio" name="devweb" value="Pera">Pera
+            </label>
+            <label>
+                <input type="radio" name="devweb" value="sabotada">sabotada
+            </label>
+            <label>
+                <input type="radio" name="devweb" value="Robson">Robson
+            </label>
+            <label>
+                <input type="radio" name="devweb" value="Lucas">Lucas
+            </label>
+            <label>
+                <input type="radio" name="devweb" value="João">João
+            </label>
+            <label>
+                <input type="radio" name="devweb" value="sabrina">sabrina
+            </label>
+        </div>
+
+        <!-- Campo de senioridade com 3 opções para escolha (select option) e css de classe "campo" -->
+        <div class="campo">
+            <label for="senioridade"><strong>Formas de Pagamentos</strong></label>
+            <select id="senioridade" required>
+                <option selected disabled value="">Tu vai pagar né?</option>
+                <option>Xerecard</option>
+                <option>Bolascard</option>
+                <option>Glub Glub</option>
+            </select>
+        </div>
+
+        <fieldset class="grupo">
+            <!-- Campo de tecnologias para escolha de 1 ou mais opções para marcar (checkbox) e css de classe "campo" -->
+            <div id="check">
+                <label><strong>Qual Tipo De Mulher Você Gosta?:</strong></label><br><br>
+                <input type="checkbox" id="Brancas" name="Brancas" value="Brancas">
+                <label for="Brancas"> Brancas</label>
+                <input type="checkbox" id="tecnologia2" name="tecnologia2" value="Pretas">
+                <label for="tecnologia2"> Pretas</label>
+                <input type="checkbox" id="tecnologia3" name="tecnologia3" value="Morenas">
+                <label for="tecnologia3"> Morenas</label>
+                <input type="checkbox" id="tecnologia4" name="tecnologia4" value="Loiras">
+                <label for="tecnologia4"> Loiras</label>
+                <input type="checkbox" id="tecnologia5" name="tecnologia5" value="Safadas">
+                <label for="tecnologia5"> Safadas</label>
+                <input type="checkbox" id="tecnologia6" name="tecnologia6" value="Santas">
+                <label for="tecnologia6"> Santas</label>
+                <input type="checkbox" id="tecnologia7" name="tecnologia7" value="Asiaticas">
+                <label for="tecnologia7"> Asiaticas</label>
+            </div>
+        </fieldset>
+
+        <!-- Caixa de texto -->
+        <div class="campo">
+            <br>
+            <label for="experiencia"><strong>Conte um pouco mais da sua experiência com mulheres: </strong></label>
+            <textarea rows="6" style="width: 26em" id="experiencia" name="experiencia"></textarea>
+        </div>
+        <!-- Botão para enviar o formulário -->
+        <button class="botao" type="submit" onsubmit="">Bora achar uma pra você?</button>
+    </form>
+
+</body>
+
+</html>
